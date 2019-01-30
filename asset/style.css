@@ -1,0 +1,141 @@
+
+body {
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.secPanel{
+  margin: auto;
+    text-align: -webkit-center;
+    vertical-align: text-bottom;
+    align-content: space-evenly;
+    padding-left: 126px;
+    padding-right: 5px;
+}
+
+
+.cubes{
+  margin-left: 201px;
+  margin-top: 22px;
+  padding-bottom: 19px;
+}
+.score {
+  margin-top: 21px;
+    margin-bottom: -37px;
+    margin-left: -235px;
+    width: 50px;
+    height: 38px;
+    /* background: #500404; */
+    border-radius: 10px;
+    font-weight: bold;
+    /* border: 2px solid black; */
+    color: red;
+    font-size: 20px;
+}
+.game-name {
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  margin-left: 25px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.panel-button {
+  margin-top: -20px;
+    margin-left: 10px;
+    width: 53px;
+    height: 42px;
+    background: red;
+    /* border-radius: 50%; */
+    border: 3px solid #232020;
+    /* box-shadow: 0px 2px 1px #232020; */
+    cursor: pointer;
+}
+
+.panel-button:active {
+  transform: translate(0px, 1px);
+  box-shadow: 0px 0px 1px #232020;
+}
+
+
+
+.panel .text{
+  font-size: 0.8em;
+  margin-top: 10px;
+  color: white;
+}
+#colorTitle{
+  color: white;
+}
+
+.button-group {
+  margin-left: -181px;
+  margin-bottom: 10px;
+}
+
+.score {
+  margin-bottom: -19px;
+  margin-left: -168px;
+}
+
+
+
+
+
+.button {
+  width: 220px;
+  height: 240px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.green, .red {
+  height: 230px;
+}
+
+.green {
+  background: darkgreen;
+}
+
+.green:active, .green-active {
+  background: rgb(8, 247, 8);
+}
+
+.red {
+  background: darkred;
+}
+
+.red:active, .red-active {
+  background: red;
+}
+
+.yellow{
+  background: yellowgreen;
+}
+
+.yellow:active, .yellow-active {
+  background: rgb(252, 194, 7);
+}
+
+.blue {
+  background: darkblue;
+}
+
+.blue:active, .blue-active {
+  background: rgb(3, 237, 245);
+}
+
+.button-disabled {
+  cursor: default;
+}
+

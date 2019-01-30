@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simon Says </title>
+  <script src="asset/vue.min.js"></script>
+  <script src="asset/lodash.min.js"></script>
+  <link rel="stylesheet" href="asset/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="asset/style.css">
+ 
+</head>
+<body>
+  <div id="app" class="container">
+      <h1 class="game-name" >Simon Says<span class="small"></span>
+        </span></h1>
+      <section class="secPanel">
+               
+        
+                  <div class="score">{{ count }}</div>
+                  <div class="score">Level</div>
+                 
+                <div class="col-xs-4">
+                  <div class="panel-button start" @click="start"></div>
+                  <div class="text" id="colorTitle">START</div>
+                </div>
+            
+             
+              <div class="row power">
+               
+              </div>
+            
+      </section>
+<section class="cubes">
+      <div class="row">
+          <div class="green button col-xs-5"  @mousedown="playAudio(0)"  v-bind:class="{'green-active': greenActive, 'button-disabled': locking}"  ></div>
+       
+        <div class="red button col-xs-5" @mousedown="playAudio(1)"  v-bind:class="{'red-active': redActive, 'button-disabled': locking}" ></div>
+
+
+
+            
+      </div>
+     
+      <div class="row">
+        <div class="yellow button col-xs-5" @mousedown="playAudio(2)" 
+        v-bind:class="{'yellow-active': yellowActive, 'button-disabled': locking}"></div>
+      
+        <div class="blue button col-xs-5" @mousedown="playAudio(3)"
+        v-bind:class="{'blue-active': blueActive, 'button-disabled': locking}"
+            ></div>
+      </div>
+    </section>
+
+    
+  
+  </div>
+  <script src="asset/app.js"></script>
+</body>
+</html>
